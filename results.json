@@ -1,0 +1,177 @@
+[
+  {
+    "description": "\tUser should be able to add a faded short sleeve t-shirt to his cart",
+    "keyword": "Feature",
+    "name": "Faded t-shirt purchase",
+    "line": 1,
+    "id": "faded-t-shirt-purchase",
+    "tags": [],
+    "uri": "e2e\\Features\\FadedTshirt.feature",
+    "elements": [
+      {
+        "id": "faded-t-shirt-purchase;logon-to-automation-practice-website-to-see-my-account-page",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Logon to automation practice website to see my account page",
+        "tags": [
+          {
+            "name": "@functional",
+            "line": 6
+          },
+          {
+            "name": "@regression",
+            "line": 6
+          },
+          {
+            "name": "@smoke",
+            "line": 6
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to automation practice site",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I logon with username \"sriram20mail@gmail.com\" with password \"Passw0rd\"",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see \"my account\" page",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "faded-t-shirt-purchase;user-is-able-to-add-a-faded-short-sleeve-t-shirt-with-a-specific-colour-to-the-cart",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "User is able to add a faded short sleeve t-shirt with a specific colour to the cart",
+        "tags": [
+          {
+            "name": "@functional",
+            "line": 11
+          },
+          {
+            "name": "@regression",
+            "line": 11
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to automation practice site",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I logon with username \"sriram20mail@gmail.com\" with password \"Passw0rd\"",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I navigate to the \"Women\" section",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "product",
+                      "colour",
+                      "size"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Faded Short Sleeve T-shirts",
+                      "Blue",
+                      "M"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I add the following product to cart",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see the success message for adding to cart as ‘Product successfully added to your shopping cart",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I should see the number of products in cart as \"1\"",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
