@@ -2,7 +2,7 @@ import { expect, use } from 'chai';
 import { binding, given, then, when } from 'cucumber-tsflow';
 import * as chaiAsPromised from 'chai-as-promised';
 import { browser, promise } from 'protractor';
-import { CommonPage } from 'e2e/page-objects/commonPage';
+import { CommonPage } from '../page-objects/commonPage';
 
 @binding()
   export class CommonSteps {

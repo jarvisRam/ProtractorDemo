@@ -35,7 +35,10 @@ exports.config = {
 
   //Prepare for test execution
   onPrepare: function () {
-    browser.driver.manage().window().maximize();
+    require("ts-node").register({
+          project: require("path").join(__dirname, "./tsconfig.e2e.json")
+    });
+    //browser.driver.manage().window().maximize();
   },
 
   //Create report on completion
@@ -56,7 +59,7 @@ exports.config = {
   //Cucumber specific setup
 
   cucumberOpts: {
-    require: ["../e2e/step-definitions/**/*.ts", "../e2e/Hooks.js"],
+    require: ["../e2e/step-definitions/**/*.ts", "../e2e/Hooks.ts"],
     tags: false,
     format: ['progress', 'json:results.json'],
     compiler: "ts:ts-node/register"

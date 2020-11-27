@@ -1,8 +1,8 @@
 import { binding, when } from 'cucumber-tsflow';
 import * as chaiAsPromised from 'chai-as-promised';
 import { expect, use } from 'chai';
-import { LoginPage } from 'e2e/page-objects/LoginPage';
 import { promise } from 'protractor';
+import { LoginPage } from '../page-objects/LoginPage';
 
 @binding()
 export class LoginSteps {

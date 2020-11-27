@@ -2,11 +2,9 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/app",
-    "module": "ES2015",
+    "module": "commonjs",
     "target": "es5",
     "types": [
-      "jasmine",
-      "jasminewd2",
       "node",
       "chai",
       "chai-as-promised"

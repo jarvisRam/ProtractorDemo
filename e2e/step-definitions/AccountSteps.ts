@@ -1,8 +1,9 @@
-import { AccountPage } from 'e2e/page-objects/AccountPage';
+
 import * as chaiAsPromised from 'chai-as-promised';
 import { expect, use } from 'chai';
 import { binding, then } from 'cucumber-tsflow/dist';
 import { promise } from 'protractor';
+import { AccountPage } from '../page-objects/AccountPage';
 
 @binding()
 export class AccountSteps {
