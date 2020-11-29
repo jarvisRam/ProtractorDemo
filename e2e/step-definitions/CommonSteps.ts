@@ -13,8 +13,8 @@ import { CommonPage } from '../page-objects/commonPage';
 
     @given(/^I navigate to automation practice site$/)
     iNavigateToSite(): promise.Promise<any> {
-      return browser.get(browser.baseUrl);
-      browser.sleep(1000);
+      return browser.waitForAngularEnabled(false)
+        .then(() => browser.get(browser.baseUrl, 12000));
     }
 
     @when(/^I navigate to the "([^"]*)" section$/)

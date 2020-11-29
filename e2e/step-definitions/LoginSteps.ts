@@ -15,6 +15,7 @@ export class LoginSteps {
 
     @when(/^I logon with username "([^"]*)" with password "([^"]*)"$/)
     iLogOn(username: string, password: string): promise.Promise<any> {
-        return this.page.enterCredentials(username, password);
+        return this.page.clickSignInBtn()
+            .then(() => this.page.enterCredentials(username, password));
     }
 }

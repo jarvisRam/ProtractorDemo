@@ -9,7 +9,7 @@ import {browser, by, element, ElementFinder, ExpectedConditions, promise} from '
         const isElementPresent = ExpectedConditions.visibilityOf(elm);
         const isElementClickable = ExpectedConditions.elementToBeClickable(elm);
         return browser.wait(ExpectedConditions.and(isElementPresent, isElementClickable), 10000)
-          .then(() => this.moveToElement(elm))
+          // //.then(() => this.moveToElement(elm))
           .then(() => elm.click());
       }
 

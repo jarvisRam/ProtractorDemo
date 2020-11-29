@@ -38,7 +38,6 @@ exports.config = {
     require("ts-node").register({
           project: require("path").join(__dirname, "./tsconfig.e2e.json")
     });
-    //browser.driver.manage().window().maximize();
   },
 
   //Create report on completion
@@ -63,8 +62,6 @@ exports.config = {
     tags: false,
     format: ['progress', 'json:results.json'],
     compiler: "ts:ts-node/register"
-    //requireModule: ['@babel/register'],
-    //helpers: [require.resolve('@babel/register')],
   },
 
   //Allow Cucumber to handle exceptions
