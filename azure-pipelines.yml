@@ -18,4 +18,4 @@ steps:
 - script: |
     npm install
     npm run e2e
-  displayName: 'npm install and test'
+  displayName: 'npm install and e2e test'
