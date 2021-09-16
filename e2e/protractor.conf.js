@@ -58,7 +58,7 @@ exports.config = {
   //Cucumber specific setup
 
   cucumberOpts: {
-    require: ["../e2e/step-definitions/**/*.ts", "../e2e/Hooks.ts"],
+    require: ["../e2e/step-definitions/**/*.ts", "../e2e/Hooks.ts", "../e2e/timeouts.ts"],
     tags: false,
     format: ['progress', 'json:results.json'],
     compiler: "ts:ts-node/register"
